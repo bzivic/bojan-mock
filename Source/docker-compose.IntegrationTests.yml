@@ -50,9 +50,9 @@ services:
       - "1433:1433"
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=Pa{}w0rd2019
+      - SA_PASSWORD=mOIzPJhtd9WRr3H-q50.ff^Jsq_YO5
     healthcheck:
-      test: /opt/mssql-tools/bin/sqlcmd -S . -U sa -P "Pa{}w0rd2019" -Q "SELECT 1" || exit 1 
+      test: /opt/mssql-tools/bin/sqlcmd -S . -U sa -P "mOIzPJhtd9WRr3H-q50.ff^Jsq_YO5" -Q "SELECT 1" || exit 1 
       timeout: 5s
       interval: 5s
       retries: 20    
